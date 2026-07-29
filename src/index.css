@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0a0a0f;
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+    overflow: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0a0a0f;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1e1e2e;
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #333;
+  }
+}
+
+@layer components {
+  .panel-glow {
+    box-shadow: 0 0 20px rgba(0, 245, 255, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* Range input styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 3px;
+  background: #1e1e2e;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: currentColor;
+  margin-top: -4px;
+  cursor: pointer;
+  box-shadow: 0 0 10px currentColor;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 6px;
+  border-radius: 3px;
+  background: #1e1e2e;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: currentColor;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 10px currentColor;
+}
